@@ -1,0 +1,459 @@
+*, *::after, *::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+  outline: none;
+  border: none;
+}
+
+body, html {
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 14px;
+  color: #666;
+  line-height: 22px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.safearea {
+  width: 760px;
+}
+
+.builder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  /*basic Info*/
+  /*singleList*/
+  /*experience section*/
+  /*education section*/
+  /* global */
+}
+
+.builder h3 {
+  width: 100%;
+  text-align: left;
+  margin-bottom: 30px;
+  display: block;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #669999;
+}
+
+.builder textarea {
+  border: 1px solid #ccc;
+  padding: 5px;
+  min-height: 100px;
+  resize: vertical;
+}
+
+.builder .basicInformation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 4%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.builder .basicInformation :last-child {
+  width: 100%;
+}
+
+.builder .singleList {
+  margin-bottom: 50px;
+}
+
+.builder .singleList .singleList__formHolder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.builder .singleList label {
+  text-align: left;
+  margin-right: 15px;
+  line-height: 26px;
+  min-width: 130px;
+  font-weight: 500;
+}
+
+.builder .singleList label span {
+  color: red;
+}
+
+.builder .singleList input {
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  padding: 5px;
+  line-height: 26px;
+  margin-right: 15px;
+}
+
+.builder .singleList input::-webkit-calendar-picker-indicator {
+  opacity: 0;
+}
+
+.builder .singleList button {
+  width: 100px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #669999;
+  font-size: 16px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.builder .singleList button:hover {
+  background-color: #578a8a;
+}
+
+.builder .singleList ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: left;
+  padding-left: 18px;
+  margin-bottom: 20px;
+}
+
+.builder .singleList ul li {
+  text-transform: capitalize;
+}
+
+.builder .singleList ul li span {
+  width: 20px;
+  height: 20px;
+  background-image: url(../images/close_redx.png);
+  background-repeat: no-repeat;
+  background-position: center 3px;
+  background-size: 16px auto;
+  position: absolute;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.builder .experinceSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  /*experienceForm*/
+  /*experience__list*/
+}
+
+.builder .experinceSection .experienceForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 4%;
+  margin-bottom: 50px;
+}
+
+.builder .experinceSection .experience__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.builder .experinceSection .experience__list .experience__list__item {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 40px;
+  padding: 15px;
+  border: 1px dashed #ccc;
+  background: #f9f9f9;
+  position: relative;
+}
+
+.builder .experinceSection .experience__list .experience__list__item__info {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 4%;
+  padding-right: 50px;
+  width: 100%;
+}
+
+.builder .experinceSection .experience__list .experience__description {
+  text-align: left;
+}
+
+.builder .experinceSection .experience__list .experience__description ol, .builder .experinceSection .experience__list .experience__description ul {
+  padding-left: 18px !important;
+}
+
+.builder .educationSection {
+  /*experience__list*/
+}
+
+.builder .educationSection .educationForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 4%;
+  margin-bottom: 50px;
+}
+
+.builder .educationSection .education__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.builder .educationSection .education__list .experience__list__item {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 40px;
+  padding: 15px;
+  border: 1px dashed #ccc;
+  background: #f9f9f9;
+  position: relative;
+}
+
+.builder .educationSection .education__list .experience__list__item__info {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 4%;
+  padding-right: 50px;
+  width: 100%;
+}
+
+.builder .educationSection .education__list .experience__description {
+  text-align: left;
+}
+
+.builder .educationSection .education__list .experience__description ol, .builder .educationSection .education__list .experience__description ul {
+  padding-left: 18px !important;
+}
+
+.builder .input_label_holder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 48%;
+}
+
+.builder .input_label_holder label {
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.builder .input_label_holder label span {
+  color: red;
+}
+
+.builder .input_label_holder input {
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  padding: 5px;
+  line-height: 26px;
+}
+
+.builder .input_label_holder.--ckEditor {
+  width: 100%;
+}
+
+.builder .input_label_holder.--fromTo {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.builder .input_label_holder.--fromTo div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 30%;
+  margin-right: 10px;
+}
+
+.builder .callToActionRight__addButton {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-align: right;
+}
+
+.builder .callToActionRight__addButton button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #669999;
+  font-size: 16px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.builder .callToActionRight__addButton button:hover {
+  background-color: #578a8a;
+}
+
+.builder .ck-content.ck-editor__editable {
+  border: 1px solid #ccc;
+  border-top: none;
+  min-height: 150px;
+  margin-bottom: 20px;
+}
+
+.builder .OrderDeleteBlock__controls {
+  width: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+.builder .blockDelete {
+  width: 40px;
+  height: 50px;
+  background-image: url(../images/delete_red.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.builder .blockOrderDown, .builder .blockOrderUp {
+  width: 40px;
+  height: 20px;
+  background-image: url(../images/select_down_arrow.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20px auto;
+  cursor: pointer;
+  margin-bottom: 5px;
+}
+
+.builder .blockOrderUp {
+  background-image: url(../images/select_up_arrow.svg);
+  margin-top: 10px;
+}
+
+/*builder*/
+.printPreview {
+  display: none;
+}
+
+@page {
+  margin: 1in;
+}
+
+@media print {
+  * {
+    display: none;
+  }
+  .printPreview {
+    width: 6.5in;
+    height: 9in;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .safearea {
+    width: 300px;
+  }
+  main {
+    max-width: 300px !important;
+    padding: 0px !important;
+  }
+  .builder .input_label_holder.--fromTo {
+    gap: 4%;
+  }
+  .builder .input_label_holder.--fromTo div {
+    width: 48%;
+    margin-right: 0px;
+  }
+  .builder .input_label_holder {
+    width: 100%;
+  }
+  .builder .singleList .singleList__formHolder {
+    width: 100%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+/*# sourceMappingURL=global.css.map */

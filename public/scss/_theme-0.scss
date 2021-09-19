@@ -1,0 +1,117 @@
+@media print{
+}
+    
+    $themeC1 : #669999;
+    .printPreview.theme-0{
+        display: flex;
+        flex-direction: column;
+
+        .printPreview__basicInfo{
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 30px;
+
+            label{
+                color: $themeC1;
+                font-weight: 600;
+                span{
+                    font-weight: 400;
+                }
+            }
+
+            .printPreview__nameHolder{
+                margin-top: 30px;
+                margin-bottom: 30px;
+                padding-bottom: 10px;
+                border-bottom: 3px solid black;
+
+                label{
+                    text-transform: uppercase;
+                    color: black;
+                    font-size: 26px;
+                    line-height: 26px;
+
+                    span{
+                        font-size: 18px;
+                        line-height: 26px;
+                        color: $themeC1;
+                        font-weight: 600;
+                    }
+                }
+            }
+        }//printPreview__basicInfo
+
+        h3{
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+
+
+
+        .printPreview__experience__list{
+            display: flex;
+            flex-direction: column;
+            position: relative;
+
+            &:last-of-type{
+                margin-bottom: 30px;
+            }
+
+            .printPreview__experience__list__item{
+                margin-bottom: 30px;
+                list-style: none;
+                position: relative;	
+                page-break-after: always;
+
+                .printPreview__experience__list__head{
+                    display: flex;
+                    flex-wrap: wrap;
+                    text-transform: uppercase;
+                    color: $themeC1;
+                    font-weight: 600;
+                    font-size: 15px;
+
+                    a{
+                        text-transform: initial;
+                        color: $themeC1;
+                        text-decoration: underline;
+                        margin-left: 5px;
+                        margin-right: 5px;
+                    }
+                    span{
+                        text-transform: initial;
+                        color: black;
+                        font-style: italic;
+                        font-weight: bold;
+                    }
+                }
+                .printPreview__experience__list__fromTo{
+                    font-weight: 300;
+                    color: #666;
+                    font-size: 13px;
+                    margin-bottom: 10px;
+                }
+                .printPreview__experience__list__description{
+                    ul,ol{
+                        padding-left: 30px;
+                    }
+                    li{
+                        margin-bottom: 0px; 
+                    }
+                }
+            }
+
+        }//printPreview__experience__list
+        .printPreview__technicalSkills{
+            padding-left: 30px;
+            margin-bottom: 30px;
+            h3{
+                left:-30px;
+                position: relative;
+                margin-top: 0px;
+            }
+        }
+
+
+
+    }///end theme
